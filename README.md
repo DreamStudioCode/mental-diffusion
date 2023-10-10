@@ -3,11 +3,9 @@
 <img src="https://github.com/nimadez/mental-diffusion/blob/main/media/screenshot.jpg?raw=true">
 
 ComfyUI Interface for VS Code<br>
-Version 0.5.0 Alpha<br>
+Version 0.5.1 Alpha<br>
 [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=nimadez.mental-diffusion)<br>
 [Download Nightly](https://github.com/nimadez/mental-diffusion/releases)
-
-> - MD remains in alpha phase because there is plenty of room for SD
 
 - [Installation](https://github.com/nimadez/mental-diffusion#installation)
 - [Quickstart](https://github.com/nimadez/mental-diffusion#quickstart)
@@ -158,6 +156,8 @@ Just copy JSON file to "**.workflows**" directory and replace tags
 "_lora_strength_"
 "_width_"
 "_height_"
+"_widthx2_"
+"_heightx2_"
 "_positive_"
 "_negative_"
 "_image_init_"

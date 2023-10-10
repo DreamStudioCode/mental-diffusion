@@ -45,10 +45,10 @@
                 format('truetype');
         }
         :root {
-            --theme-steel: #313d4d;
-            --theme-steel-light: #3c4b5c;
-            --theme-steel-dark: #2a3341;
-            --theme-steel-text: #a3b7c7;
+            --theme_steel: #313d4d;
+            --theme_steel_light: #3c4b5c;
+            --theme_steel_dark: #2a3341;
+            --theme_steel_text: #a3b7c7;
              /* dynamic colors */
             --theme_base: #000000;
             --theme_light: #000000;
@@ -59,20 +59,20 @@
             --theme_dynamic_text: #a3b7c7;
              /* globals */
             --font: Roboto;
-            --editor-minwidth: 140px;
-            --editor-minheight: 160px;
+            --editor_minwidth: 140px;
+            --editor_minheight: 160px;
         }
         * { margin: 0; padding: 0; outline: none; border: none; user-select: none; }
         html, body { user-select: none; overflow: hidden; touch-action: pan-x; -webkit-tap-highlight-color: transparent; image-rendering: optimizeQuality; shape-rendering: optimizeSpeed; text-rendering: optimizeSpeed; }
         body { background: #0D1117; color: silver; font-family: var(--font); font-size: 14px; position: fixed; width: 100%; height: 100%; cursor: default; margin: 0; padding: 0; }
         a, a:visited { color: #616e83; font-size: 12px; text-decoration: none; }
         a:hover { color: var(--theme_link); }
-        input[type=number] { caret-color: var(--theme_input); background: var(--theme-steel-dark); color: var(--theme-steel-text); font-size: 13px; width: 100%; padding: 3px 0 3px 0; border-radius: 3px; text-align: center; outline: none; }
-        input[type=number]:hover { background: var(--theme-steel-light); }
-        input[type=number].microinput { float: right; width: 40%; padding: 2px; background: var(--theme-steel-dark); color: var(--theme-steel-text); font-size: 13px; text-align: center; }
-        input[type=number].microinput:hover { background: var(--theme-steel-light); }
-        input[type=text] { caret-color: var(--theme_input); background: var(--theme-steel); color: var(--theme-steel-text); width: 100%; padding: 3px 0 3px 0; text-indent: 5px; font-size: 13px; border-radius: 3px; outline: none; }
-        input[type=text]:hover { background: var(--theme-steel-light); }
+        input[type=number] { caret-color: var(--theme_input); background: var(--theme_steel_dark); color: var(--theme_steel_text); font-size: 13px; width: 100%; padding: 3px 0 3px 0; border-radius: 3px; text-align: center; outline: none; }
+        input[type=number]:hover { background: var(--theme_steel_light); }
+        input[type=number].microinput { float: right; width: 45%; padding: 2px; background: var(--theme_steel_dark); color: var(--theme_steel_text); font-size: 13px; text-align: center; }
+        input[type=number].microinput:hover { background: var(--theme_steel_light); }
+        input[type=text] { caret-color: var(--theme_input); background: var(--theme_steel); color: var(--theme_steel_text); width: 100%; padding: 3px 0 3px 0; text-indent: 5px; font-size: 13px; border-radius: 3px; outline: none; }
+        input[type=text]:hover { background: var(--theme_steel_light); }
         input[type=range] { accent-color: var(--theme_base); width: 100%; height: 2px; vertical-align: middle; outline: none; }
         input[type=range]::-webkit-slider-thumb { transform: scale(0.7); }
         input[type=range]::-webkit-slider-thumb:hover { cursor: pointer; }
@@ -83,12 +83,12 @@
         input[type=checkbox] { filter: brightness(0.6); transform: scale(0.9); margin: 3px 0 3px 0; vertical-align: -2px; }
         input[type=checkbox]:checked { accent-color: var(--theme_base); filter: none; }
         input[type=checkbox]:disabled { opacity: 0.5; }
-        select { font-family: var(--font); width: 100%; background: var(--theme-steel); color: var(--theme-steel-text); font-size: 13px; text-indent: 1px; padding: 2px 0 2px 0; border-radius: 3px; outline: none; }
-        select:hover { background: var(--theme-steel-light); }
+        select { font-family: var(--font); width: 100%; background: var(--theme_steel); color: var(--theme_steel_text); font-size: 13px; text-indent: 1px; padding: 2px 0 2px 0; border-radius: 3px; outline: none; }
+        select:hover { background: var(--theme_steel_light); }
         option { font-family: var(--font); background: #252b38; font-size: 14px; }
         textarea { font-family: var(--font); text-rendering: optimizeLegibility; caret-color: var(--theme_input); background: slategray; border: solid 1px #313b50; width: 100%; line-height: 1.3em; font-size: 15px; padding: 3px 5px 3px 5px; margin: 3px; resize: none; outline: none; }
-        button { font-family: var(--font); width: 100%; background: var(--theme-steel); color: var(--theme-steel-text); padding: 4px; font-size: 13px; border: solid 1px #2c3446; }
-        button:hover { background: var(--theme-steel-light); cursor: pointer; }
+        button { font-family: var(--font); width: 100%; background: var(--theme_steel); color: var(--theme_steel_text); padding: 4px; font-size: 13px; border: solid 1px #2c3446; }
+        button:hover { background: var(--theme_steel_light); cursor: pointer; }
         button.tool_selector { background: var(--theme_selection); color: var(--theme_dynamic_text); cursor: pointer; }
         button:disabled { background: #2e3542; color: #888; border-color: #424d61; pointer-events: none; }
         ul { list-style: none; }
@@ -102,9 +102,9 @@
             background-repeat: repeat; background-size: 5%; background-blend-mode: luminosity; background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAC9JREFUOE9j1NDQ+M+ABzx79gyfNAPjqAHDIgz4+PjwpgMpKSn86WDUAAbGoR8GALg1LREM+DYWAAAAAElFTkSuQmCC"); }
         #img_back { object-fit: contain; image-rendering: optimizeQuality; cursor: no-drop; }
         #topbar { display: flex; opacity: 0.8; top: 0; width: fit-content; left: 50%; transform: translate(-50%,0); position: absolute; }
-        #topbar button { color: var(--theme-steel-text); width: 80px; font-size: 11px; letter-spacing: 0.05em; padding: 2px; border: none; border-right: solid 1px var(--theme-steel-dark); }
+        #topbar button { color: var(--theme_steel_text); width: 80px; font-size: 11px; letter-spacing: 0.05em; padding: 2px; border: none; border-right: solid 1px var(--theme_steel_dark); }
         #topbar button:hover { color: white; }
-        #topbar button.topbar_select { color: #eeeeee; background: var(--theme-steel-light); }
+        #topbar button.topbar_select { color: #eeeeee; background: var(--theme_steel_light); }
         #topbar svg { vertical-align: middle; }
         #topbar :first-child { border-bottom-left-radius: 3px; }
         #topbar :last-child { border-bottom-right-radius: 3px; border: none; }
@@ -138,7 +138,7 @@
         #slider_opacity::-webkit-slider-thumb:hover { cursor: pointer; }
         #panel { z-index: 1000; font-size: 12px; line-height: 1.5em; width: 100%; padding: 3px 3px 4px 5px; top: 0; position: relative; }
         #panel li { overflow: hidden; }
-        #panel .category { opacity: 0.8; color: var(--theme-steel-text); letter-spacing: 0.05em; text-transform: uppercase; font-size: 10px; padding-top: 2px; margin: 5px 0 1px 0; text-align: left; cursor: pointer; }
+        #panel .category { opacity: 0.8; color: var(--theme_steel_text); letter-spacing: 0.05em; text-transform: uppercase; font-size: 10px; padding-top: 2px; margin: 5px 0 1px 0; text-align: left; cursor: pointer; }
         #panel .category:hover { color: white; }
         #panel .category:first-child { margin-top: 2px; }
         #panel #brushcolor { width: 110%; }
@@ -154,7 +154,7 @@
         #preview_target { background: #1a212cCC; color: slategray; outline: none; border-top-left-radius: 0; border-top-right-radius: 0; }
         #preview_target:hover { background: #11161bCC; color: var(--theme_base); }
         #preview_target option { color: silver; }
-        .editor { z-index: 1000; display: none; resize: none; overflow: hidden; min-width: var(--editor-minwidth); min-height: var(--editor-minheight); background: #161c25ee; box-shadow: 0 0 3px #000000AA; font-size: 13px; border: solid 1px #262e3a; padding: 5px; border-radius: 5px; transition: opacity 0.1s ease-in; position: absolute; }
+        .editor { z-index: 1000; display: none; resize: none; overflow: hidden; min-width: var(--editor_minwidth); min-height: var(--editor_minheight); background: #161c25ee; box-shadow: 0 0 3px #000000AA; font-size: 13px; border: solid 1px #262e3a; padding: 5px; border-radius: 5px; transition: opacity 0.1s ease-in; position: absolute; }
         .editor ul { list-style: none; }
         .editor_nav { display: flex; width: 100%; margin-bottom: 5px; }
         .editor_nav button { padding: 0; height: 20px; }
@@ -166,7 +166,7 @@
         #editor_prefs li.cat { color: #8e9db6; font-size: 11px; font-weight: bold; letter-spacing: 0.05em; text-transform: uppercase; padding: 6px 0 3px 0; }
         #editor_prefs li:first-child { padding-top: 0; }
         #editor_canvas { width: 140px; top: 20%; left: 50%; margin-left: -70px; }
-        #editor_grid { resize: both; width: var(--editor-minwidth); height: 512px; top: 10%; left: 50%; margin-left: -80px; }
+        #editor_grid { resize: both; width: var(--editor_minwidth); height: 512px; top: 10%; left: 50%; margin-left: -80px; }
         #editor_grid input[type=range] { accent-color: #3f4a5e; }
         #editor_merge { width: 300px; top: 30%; left: 50%; margin-left: -150px; }
         #editor_merge ul { margin-bottom: 5px; }
@@ -185,23 +185,23 @@
         #merge_model_b { outline: none; }
         #merge_vae { outline: none; }
         #styles { z-index: 1200; transition: transform 0.1s ease; background: #161c24ee; box-shadow: 0 -2px 3px #000000CC; padding: 5px; width: 200px; height: 300px; transform: scaleY(0); transform-origin: 0 100%; border-radius: 5px; position: absolute; }
-        #styles button { font-size: 14px; line-height: 1em; background: none; color: var(--theme-steel-text); width: 100%; padding: 1px 3px 1px 3px; height: fit-content; border: solid 1px transparent; border-radius: 0; text-align: left; }
+        #styles button { font-size: 14px; line-height: 1em; background: none; color: var(--theme_steel_text); width: 100%; padding: 1px 3px 1px 3px; height: fit-content; border: solid 1px transparent; border-radius: 0; text-align: left; }
         #styles button:hover { color: white; }
         #styles .style_selected { background: linear-gradient(90deg, var(--theme_dark), transparent); color: #ddd; }
-        #styles .style_cat { display: block; color: var(--theme_base); width: 100%; padding: 3px; margin-bottom: 5px; font-size: 14px; font-weight: bold; background: #262e3aAA; text-align: left; cursor: default; pointer-events: none; }
+        #styles .style_cat { display: block; color: var(--theme_base); width: 100%; padding: 3px; margin-bottom: 5px; font-size: 14px; font-weight: bold; text-align: left; cursor: default; pointer-events: none; }
         #styles .style_cat::before { content: "● "; color: var(--theme_base); }
         #styles_button { z-index: 1200; opacity: 0.6; width: 50px; position: absolute; }
         #styles_button button { padding: 1px 5px 1px 5px; font-size: 10px; border-top-right-radius: 5px; border-top-left-radius: 5px; }
         #styles_content { display: grid; height: 300px; overflow: hidden; overflow-y: scroll; }
-        #styles_stats { opacity: 0.8; background: var(--theme-steel-dark); color: silver; padding: 0 5px 0 5px; font-size: 11px;; width: fit-content; right: 15px; position: absolute; text-align: center; cursor: default; }
+        #styles_stats { opacity: 0.8; background: var(--theme_steel_dark); color: silver; padding: 0 5px 0 5px; font-size: 11px;; width: fit-content; right: 15px; position: absolute; text-align: center; cursor: default; }
         #outpaint_source { margin: 3px 0 3px 0; outline: none; }
         #controlbox { width: 100%; margin: 3px 0 3px 3px; }
         #controlbox button { height: 30px; }
         #controlbox select { height: 27px; text-indent: 4px; }
         #render_options { padding: 5px; }
         #prompts { display: flex; width: 100%; height: 100%; }
-        #positive { background: #2a364480; color: var(--theme-steel-text); margin-right: 2px; outline: none; }
-        #negative { background: #2a364480; color: var(--theme-steel-text); margin-left: 2px; outline: none; }
+        #positive { background: #2a364480; color: var(--theme_steel_text); margin-right: 2px; outline: none; }
+        #negative { background: #2a364480; color: var(--theme_steel_text); margin-left: 2px; outline: none; }
         #workflows { outline: none; margin-top: 1px; border-radius: 0; }
         #checkpoints { outline: none; }
         #vaes { outline: none; }
@@ -216,7 +216,7 @@
         #palette span { width: 100%; height: 15px; cursor: pointer; }
         #btn_render { background: var(--theme_selection); color: var(--theme_dynamic_text); font-size: 13px; }
         #btn_render:hover { background: var(--theme_base); color: white; }
-        #btn_render:disabled { background: var(--theme-steel-dark); color: indianred; }
+        #btn_render:disabled { background: var(--theme_steel_dark); color: indianred; }
         #btn_stop { font-size: 13px; }
         #pref_dimension { outline: none; }
         #pref_theme { height: 23px; }
@@ -346,9 +346,9 @@
                         </div>
                         <label>Seed</label> <input type="number" id="seed" class="ignorekeys nowheel" value="-1" placeholder="Seed number"><br><input type="checkbox" id="seedrng" checked> <label for="seedrng">Randomize</label>
                         <div class="spacer"></div>
-                        <label>Steps</label> <input type="number" class="microinput ignorekeys nowheel" value="20" min="1" max="100" step="1" onchange="this.nextElementSibling.value = this.value"> <input type="range" id="steps" value="20" min="1" max="100" step="1" oninput="this.previousElementSibling.value = this.value">
-                        <label>Guidance</label> <input type="number" class="microinput ignorekeys nowheel" value="7.50" min="0" max="50" step="0.01" onchange="this.nextElementSibling.value = this.value"> <input type="range" id="guidance" value="8.00" min="0" max="50" step="0.01" oninput="this.previousElementSibling.value = this.value"> 
-                        <label>Strength</label> <input type="number" class="microinput ignorekeys nowheel" value="1.00" min="0.01" max="1" step="0.01" onchange="this.nextElementSibling.value = this.value"> <input type="range" id="strength" value="1.00" min="0.01" max="1" step="0.01" oninput="this.previousElementSibling.value = this.value">
+                        <label>Steps</label> <input type="number" id="steps" class="microinput ignorekeys nowheel" value="30" min="1" step="1" onchange="this.nextElementSibling.value = this.value"> <input type="range" value="30" min="1" max="100" step="1" oninput="this.previousElementSibling.value = this.value">
+                        <label>Guidance</label> <input type="number" id="guidance" class="microinput ignorekeys nowheel" value="7.00" min="0" max="100" step="0.01" onchange="this.nextElementSibling.value = this.value"> <input type="range" value="7.00" min="0" max="100" step="0.01" oninput="this.previousElementSibling.value = this.value"> 
+                        <label>Strength</label> <input type="number" id="strength" class="microinput ignorekeys nowheel" value="1.00" min="0.01" max="1" step="0.01" onchange="this.nextElementSibling.value = this.value"> <input type="range" value="1.00" min="0.01" max="1" step="0.01" oninput="this.previousElementSibling.value = this.value">
                     </li> 
 
                     <li class="category" onclick="ui.collapseMenu(this, 140)">▼ Paint / Mask</li>
@@ -367,18 +367,18 @@
                         </div>
                         <div class="row" style="max-height: 25px">
                             <button title="Clear painting" onclick="workspace.clearPaintCanvas()">X</button>
-                            <button title="Redo painting" onclick="memory.redo()" style="max-height: 25px"><svg xmlns="http://www.w3.org/2000/svg" fill="var(--theme-steel-text)" viewBox="0 0 24 24" width="15px" height="15px"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><polygon points="6.23,20.23 8,22 18,12 8,2 6.23,3.77 14.46,12"/></g></svg></button>
-                            <button title="Undo painting" onclick="memory.undo()" style="max-height: 25px"><svg xmlns="http://www.w3.org/2000/svg" fill="var(--theme-steel-text)" viewBox="0 0 24 24" width="15px" height="15px"><path d="M0 0h24v24H0z" fill="none"/><path d="M11.67 3.87L9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"/></svg></button>
+                            <button title="Redo painting" onclick="memory.redo()" style="max-height: 25px"><svg xmlns="http://www.w3.org/2000/svg" fill="var(--theme_steel_text)" viewBox="0 0 24 24" width="15px" height="15px"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><polygon points="6.23,20.23 8,22 18,12 8,2 6.23,3.77 14.46,12"/></g></svg></button>
+                            <button title="Undo painting" onclick="memory.undo()" style="max-height: 25px"><svg xmlns="http://www.w3.org/2000/svg" fill="var(--theme_steel_text)" viewBox="0 0 24 24" width="15px" height="15px"><path d="M0 0h24v24H0z" fill="none"/><path d="M11.67 3.87L9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"/></svg></button>
                         </div>
                         <div class="row" style="max-height: 25px">
                             <button title="Eyedropper" onclick="activateEyedropper()" style="max-height: 25px">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15px" height="15px" fill="var(--theme-steel-text)"><path d="M0 0h24v24H0z" fill="none"/><path d="M20.71 5.63l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-3.12 3.12-1.93-1.91-1.41 1.41 1.42 1.42L3 16.25V21h4.75l8.92-8.92 1.42 1.42 1.41-1.41-1.92-1.92 3.12-3.12c.4-.4.4-1.03.01-1.42zM6.92 19L5 17.08l8.06-8.06 1.92 1.92L6.92 19z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15px" height="15px" fill="var(--theme_steel_text)"><path d="M0 0h24v24H0z" fill="none"/><path d="M20.71 5.63l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-3.12 3.12-1.93-1.91-1.41 1.41 1.42 1.42L3 16.25V21h4.75l8.92-8.92 1.42 1.42 1.41-1.41-1.92-1.92 3.12-3.12c.4-.4.4-1.03.01-1.42zM6.92 19L5 17.08l8.06-8.06 1.92 1.92L6.92 19z"/></svg>
                             </button>
                             <input type="color" id="brushcolor" value="#242729">
                         </div>
                         <div id="palette" class="row"></div>
                         <div class="row" style="margin-top: 3px">
-                            <input type="checkbox" id="autobake">&nbsp;<label for="autobake" title="Auto-bake canvas on copy, save, swap, split, and drag">Auto bake</label>
+                            <input type="checkbox" id="autobake" checked>&nbsp;<label for="autobake" title="Auto-bake canvas on copy, save, swap, split, and drag">Auto bake</label>
                         </div>
                         <div class="row">
                             <input type="checkbox" id="maskmode">&nbsp;<label for="maskmode" title="Use painting tools for masking">Mask mode</label>
@@ -442,7 +442,7 @@
                 </select>
             </li>
             <li class="row"><label>Sampler</label> <select id="pref_sampler"></select></li>
-            <li class="row"><label>Upscale Model</label> <select id="pref_upscalemodel"></select></li>
+            <li class="row"><label>Upscaler</label> <select id="pref_upscaler"></select></li>
             <li class="row"><label>Max Seed</label> <input type="text" id="pref_maxseed" class="ignorekeys" value="9007199254740991" placeholder="Max seed number" spellcheck="false"></li>
             <li class="cat">Filename</li>
             <li>
@@ -462,7 +462,7 @@
                 <button onclick="vscode.openWorkflows()">Workflows</button>
             </li>
             <li class="cat">About</li>
-            <li><a href="https://github.com/nimadez/mental-diffusion" target="_blank">MD 0.5.0 Alpha [ComfyUI Bridge] ©2023 @nimadez</a></li>
+            <li><a href="https://github.com/nimadez/mental-diffusion" target="_blank">MD 0.5.1 Alpha [ComfyUI Bridge] ©2023 @nimadez</a></li>
         </ul>
     </div>
 
@@ -527,19 +527,19 @@
             <li class="row"><label>Top</label> <input type="number" value="0" min="-10000" max="10000" id="outpaint_top" class="ignorekeys" onchange="workspace.createOutpaint()"></li>
             <li class="row"><label>Right</label> <input type="number" value="0" min="-10000" max="10000" id="outpaint_right" class="ignorekeys" onchange="workspace.createOutpaint()"></li>
             <li class="row"><label>Bottom</label> <input type="number" value="0" min="-10000" max="10000" id="outpaint_bottom" class="ignorekeys" onchange="workspace.createOutpaint()"></li>
-            <li onclick="workspace.createOutpaint()"><input type="checkbox" id="outpaint_crop"> <label for="outpaint_crop">Crop Mode</label></li>
+            <li><input type="checkbox" id="outpaint_crop" onclick="workspace.createOutpaint()"> <label for="outpaint_crop">Crop Mode</label></li>
         </ul>
     </div>
 
     <div id="topbar">
         <button onclick="ui.togglePrefsEditor()" id="topbar_prefs" title="Preferences" style="width: 33px">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="var(--theme-steel-text)" viewBox="0 0 24 24" enable-background="new 0 0 24 24"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.07-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61 l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41 h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.74,8.87 C2.62,9.08,2.66,9.34,2.86,9.48l2.03,1.58C4.84,11.36,4.8,11.69,4.8,12s0.02,0.64,0.07,0.94l-2.03,1.58 c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54 c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.44-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96 c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.47-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6 s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z"/></g></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="var(--theme_steel_text)" viewBox="0 0 24 24" enable-background="new 0 0 24 24"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.07-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61 l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41 h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.74,8.87 C2.62,9.08,2.66,9.34,2.86,9.48l2.03,1.58C4.84,11.36,4.8,11.69,4.8,12s0.02,0.64,0.07,0.94l-2.03,1.58 c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54 c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.44-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96 c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.47-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6 s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z"/></g></svg>
         </button>
         <button onclick="ui.toggleCanvasEditor()" id="topbar_canvas" title="Canvas Editor">CANVAS</button>
         <button onclick="ui.toggleGridEditor()" id="topbar_grid" title="Grid Editor">GRID</button>
         <button onclick="ui.toggleMergeEditor()" id="topbar_merge" title="Merge Editor">MERGE</button>
         <button onclick="document.getElementById('openmeta').click()" title="Load MD Metadata" style="width: 33px">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="var(--theme-steel-text)" viewBox="0 -960 960 960"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="var(--theme_steel_text)" viewBox="0 -960 960 960"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg>
         </button>
     </div>
 
@@ -889,7 +889,7 @@ function packNumberAs4Bytes(t){let e=new ArrayBuffer(4),n=new DataView(e);return
                         }
                         createListOptionsCheckpoints(checkpoints, arr);
 
-                        createListOptions(prefs.getUpscaleModelElem(), res.UpscaleModelLoader.input.required.model_name[0]);
+                        createListOptions(prefs.getUpscaler(), res.UpscaleModelLoader.input.required.model_name[0]);
                         createListOptions(vaes, ["default", ...res.VAELoader.input.required.vae_name[0]]);
                         createListOptions(loras, ["none", ...res.LoraLoader.input.required.lora_name[0]]);
                         createListOptions(sampler, res.KSampler.input.required.sampler_name[0]);
@@ -951,7 +951,7 @@ function packNumberAs4Bytes(t){let e=new ArrayBuffer(4),n=new DataView(e);return
             const metadata = buildMetadata();
 
             if (seedRng.checked)
-                seed.value = randomRangeInt(0, prefs.getMaxSeed());
+                seed.value = randomRangeInt(0, parseInt(prefs.getMaxSeed().value));
 
             comfy.ws_connect((msg) => {
                 if (msg.data instanceof ArrayBuffer) {
@@ -999,10 +999,11 @@ function packNumberAs4Bytes(t){let e=new ArrayBuffer(4),n=new DataView(e);return
 
                                 pool.add({
                                     metadata: JSON.parse(metadata),
-                                    base64: image
+                                    base64: image,
+                                    prompt: JSON.stringify(res[pid].prompt[2], null, 1)
                                 });
 
-                                if (savefile.checked && upscale.checked && prefs.getUpscaleModelElem().value !== '') {
+                                if (savefile.checked && upscale.checked && prefs.getUpscaler().value !== '') {
                                     vscode.saveImageToInput(image, "temp_upscale.png");
                                     upscaler("temp_upscale.png", metadata);
                                 }
@@ -1025,7 +1026,7 @@ function packNumberAs4Bytes(t){let e=new ArrayBuffer(4),n=new DataView(e);return
         this.instantUpscale = async function() {
             if (this.isWorking) return;
             if (img_init.src == IMG_NULL) return;
-            if (prefs.getUpscaleModelElem().value == '') {
+            if (prefs.getUpscaler().value == '') {
                 notify("select upscale model in preferences");
                 return;
             }
@@ -1276,7 +1277,7 @@ function packNumberAs4Bytes(t){let e=new ArrayBuffer(4),n=new DataView(e);return
             const prompt = JSON.parse(vscode.workflow_upscale);
             prompt["11"].inputs.image = vscode.pathMD + '/.input/' + imgfile;
             prompt["11"].is_changed[0] = uuid64();
-            prompt["12"].inputs.model_name = prefs.getUpscaleModel();
+            prompt["12"].inputs.model_name = prefs.getUpscaler().value;
             return prompt;
         }
 
@@ -1307,11 +1308,12 @@ function packNumberAs4Bytes(t){let e=new ArrayBuffer(4),n=new DataView(e);return
             prompt = prompt.replace('"_ckpt_name_"',    `"${ checkpoints.value.replace(/\\/g, '\\\\') }"`);
             prompt = prompt.replace('"_width_"',        `${ parseInt(width.value) }`);
             prompt = prompt.replace('"_height_"',       `${ parseInt(height.value) }`);
+            prompt = prompt.replace('"_widthx2_"',      `${ parseInt(width.value * 2) }`);
+            prompt = prompt.replace('"_heightx2_"',     `${ parseInt(height.value * 2) }`);
             prompt = prompt.replace('"_positive_"',     `"${ positive.value }"`);
             prompt = prompt.replace('"_negative_"',     `"${ negative.value }"`);
             prompt = prompt.replace('"_image_init_"',   `"${ vscode.pathMD + '/.input/temp_init.png' }"`);
             prompt = prompt.replace('"_image_mask_"',   `"${ vscode.pathMD + '/.input/temp_mask.png' }"`);
-            prompt = prompt.replace('"_is_changed_"',   `"${ uuid64() }"`);
             if (vaes.value !== 'default') prompt = prompt.replace('"_vae_name_"',     `"${ vaes.value }"`);
             if (loras.value !== 'none')   prompt = prompt.replace('"_lora_name_"',    `"${ loras.value }"`);
             if (loras.value !== 'none')   prompt = prompt.replace('"_lora_strength_"',`${ parseFloat(loraStrength.value) }`);
@@ -1381,7 +1383,7 @@ function packNumberAs4Bytes(t){let e=new ArrayBuffer(4),n=new DataView(e);return
                 positive:       positive.value,
                 negative:       negative.value,
                 filename:       prefs.getFilename(),
-                version:        "MD 0.5.0"
+                version:        "MD 0.5.1"
             });
         }
 
@@ -1390,7 +1392,7 @@ function packNumberAs4Bytes(t){let e=new ArrayBuffer(4),n=new DataView(e);return
                 notify("select a checkpoint");
                 return false;
             }
-            if (upscale.checked && prefs.getUpscaleModelElem().value == '') { // missing upscale model
+            if (upscale.checked && prefs.getUpscaler().value == '') { // missing upscale model
                 notify("select upscale model in preferences");
                 return false;
             }
@@ -2134,7 +2136,7 @@ function packNumberAs4Bytes(t){let e=new ArrayBuffer(4),n=new DataView(e);return
 
         this.init = function() {
             this.add({
-                metadata: JSON.parse(`{ "workflow": "default_txt2img_api.json", "checkpoint": "checkpoints/undefined.safetensors", "vae": "default", "lora": "none", "lora_strength": "1.00", "sampler": "euler_ancestral", "scheduler": "normal", "width": "1024", "height": "1024", "seed": "4376185234660786", "steps": "20", "guidance": "7.50", "strength": "1.00", "positive": "a picture of an insectoid bug machine, large eyes and wings, hyper realistic, cinematic, detailed, 8k", "negative": "deformed, distorted, disfigured, poorly drawn, poorly drawn hands, poorly drawn face, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, mutated hands and fingers, disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation, malformed hands, out of focus, text, watermark", "filename": "img_4376185234660786", "version": "MD 1.0.0"}`),
+                metadata: JSON.parse(`{ "workflow": "default_txt2img_api.json", "checkpoint": "checkpoints/undefined.safetensors", "vae": "default", "lora": "none", "lora_strength": "1.00", "sampler": "euler_ancestral", "scheduler": "normal", "width": "1024", "height": "1024", "seed": "4376185234660786", "steps": "20", "guidance": "7.00", "strength": "1.00", "positive": "a picture of an insectoid bug machine, large eyes and wings, hyper realistic, cinematic, detailed, 8k", "negative": "deformed, distorted, disfigured, poorly drawn, poorly drawn hands, poorly drawn face, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, mutated hands and fingers, disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation, malformed hands, out of focus, text, watermark", "filename": "img_4376185234660786", "version": "MD 1.0.0"}`),
                 base64: IMG_SPLASH_FRONT
             });
         }
@@ -2155,12 +2157,11 @@ function packNumberAs4Bytes(t){let e=new ArrayBuffer(4),n=new DataView(e);return
             btn_meta.innerHTML = "Metadata";
             btn_meta.title = JSON.stringify(data.metadata, null, 1);
             btn_prompt.innerHTML = "Prompt";
-            btn_prompt.title = data.prompt;
             btn_delete.innerHTML = "Delete";
 
             const img = document.createElement("img");
             img.src = data.base64;
-            img.title = `${ data.metadata.filename } | ${ img.naturalWidth }x${ img.naturalHeight }`;
+            img.title = data.metadata.filename;
             img.style.width = gridSizeArray[gridSize.value] + 'px';
             img.style.height = gridSizeArray[gridSize.value] + 'px';
             img.addEventListener("click", (ev) => {
@@ -2188,14 +2189,10 @@ function packNumberAs4Bytes(t){let e=new ArrayBuffer(4),n=new DataView(e);return
                 copyTextData(data.base64, btn_copy);
             };
             btn_meta.onclick = (ev) => {
-                copyTextData(JSON.stringify(data.metadata, null, 1), undefined);
-                document.body.removeChild(popup);
-                notify("metadata copied");
+                copyTextData(JSON.stringify(data.metadata, null, 1), btn_meta);
             };
             btn_prompt.onclick = (ev) => {
-                copyTextData(data.prompt, undefined);
-                document.body.removeChild(popup);
-                notify("prompt copied");
+                (data.prompt) ? copyTextData(data.prompt, btn_prompt) : notify('prompt is not available');
             };
             btn_delete.onclick = (ev) => {
                 pool.removeGrid(data);
@@ -2254,7 +2251,7 @@ function packNumberAs4Bytes(t){let e=new ArrayBuffer(4),n=new DataView(e);return
             // backward compatibility
             if (data.metadata["cfg"])           guidance.value = parseFloat(data.metadata["cfg"]).toFixed(2);
             if (data.metadata["prompt"])        positive.value = data.metadata["prompt"];
-            if (checkpoints.value == '')        checkpoints.value = prefs.getCheckpoint();
+            if (checkpoints.value == '')        checkpoints.value = prefs.getCheckpoint().value;
             if (scheduler.value == '')          scheduler.value = "normal";
 
             steps.previousElementSibling.value = steps.value;
@@ -3276,7 +3273,7 @@ function packNumberAs4Bytes(t){let e=new ArrayBuffer(4),n=new DataView(e);return
         const KEY_CHECKPOINT = "pref_checkpoint";
         const KEY_DIMENSION = "pref_dimension";
         const KEY_SAMPLER = "pref_sampler";
-        const KEY_UPSCALEMODEL = "pref_upscalemodel";
+        const KEY_UPSCALER = "pref_upscaler";
         const KEY_MAXSEED = "pref_maxseed";
         const KEY_FILENAME = "pref_filename";
         const KEY_POSITIVE = "pref_positive";
@@ -3297,20 +3294,20 @@ function packNumberAs4Bytes(t){let e=new ArrayBuffer(4),n=new DataView(e);return
             document.getElementById(KEY_CHECKPOINT).value = undefined;
             document.getElementById(KEY_SAMPLER).innerHTML = sampler.innerHTML;
             document.getElementById(KEY_SAMPLER).value = "euler_ancestral";
-            document.getElementById(KEY_UPSCALEMODEL).value = "RealESRGAN_x4plus.pth";
+            document.getElementById(KEY_UPSCALER).value = "RealESRGAN_x4plus.pth";
             document.getElementById(KEY_MAXSEED).value = Number.MAX_SAFE_INTEGER; // 9007199254740991
             initPref(KEY_WORKFLOW);
             initPref(KEY_CHECKPOINT);
             initPref(KEY_DIMENSION);
             initPref(KEY_SAMPLER);
-            initPref(KEY_UPSCALEMODEL);
+            initPref(KEY_UPSCALER);
             initPref(KEY_MAXSEED);
             initPref(KEY_FILENAME);
             //initPrefCheck(KEY_AUTOBAKE);
             initStartupDim();
-            workflows.value = this.getWorkflow();
-            checkpoints.value = this.getCheckpoint();
-            sampler.value = this.getSampler();
+            workflows.value = this.getWorkflow().value;
+            checkpoints.value = this.getCheckpoint().value;
+            sampler.value = this.getSampler().value;
             scheduler.value = "normal";
             seed.value = randomRangeInt(0, document.getElementById(KEY_MAXSEED).value);
         }
@@ -3325,31 +3322,27 @@ function packNumberAs4Bytes(t){let e=new ArrayBuffer(4),n=new DataView(e);return
         }
 
         this.getWorkflow = function() {
-            return document.getElementById(KEY_WORKFLOW).value;
+            return document.getElementById(KEY_WORKFLOW);
         }
 
         this.getCheckpoint = function() {
-            return document.getElementById(KEY_CHECKPOINT).value;
+            return document.getElementById(KEY_CHECKPOINT);
         }
 
         this.getDimension = function() {
-            return parseInt(document.getElementById(KEY_DIMENSION).value);
+            return document.getElementById(KEY_DIMENSION);
         }
 
         this.getSampler = function() {
-            return document.getElementById(KEY_SAMPLER).value;
+            return document.getElementById(KEY_SAMPLER);
         }
 
-        this.getUpscaleModel = function() {
-            return document.getElementById(KEY_UPSCALEMODEL).value;
-        }
-
-        this.getUpscaleModelElem = function() {
-            return document.getElementById(KEY_UPSCALEMODEL);
+        this.getUpscaler = function() {
+            return document.getElementById(KEY_UPSCALER);
         }
 
         this.getMaxSeed = function() {
-            return parseInt(document.getElementById(KEY_MAXSEED).value);
+            return document.getElementById(KEY_MAXSEED);
         }
 
         this.getFilename = function() {
@@ -3661,18 +3654,19 @@ function packNumberAs4Bytes(t){let e=new ArrayBuffer(4),n=new DataView(e);return
         return (((r*299)+(g*587)+(b*114))/1000 >= 128) ? dark : light;
     }
 
-    function copyTextData(str, elem = undefined) { // TODO: deprecated function
+    function copyTextData(str, elem = undefined) {
         const input = document.createElement('input');
         input.type = 'text';
         input.value = str;
         document.body.appendChild(input);
         input.select();
-        document.execCommand('copy');
+        document.execCommand('copy'); // TODO: deprecated function
         document.body.removeChild(input);
         if (elem) {
+            const name = elem.innerHTML;
             elem.innerHTML = 'Copied';
             setTimeout(() => {
-                elem.innerHTML = 'Copy';
+                elem.innerHTML = name;
             }, 500);
         }
     }
@@ -3711,9 +3705,7 @@ function packNumberAs4Bytes(t){let e=new ArrayBuffer(4),n=new DataView(e);return
     }
 
     function randomRangeInt(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min + 1)) + min;
+        return Math.floor(Math.random() * (max - min)) + min;
     }
 
     function uuidv4() {
